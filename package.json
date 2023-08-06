@@ -1,0 +1,22 @@
+{
+  "name": "multidiseasepredictionsystem",
+  "version": "1.0.0",
+  "description": "Multi Disease Prediction System",
+  "main": "server.js",
+  "scripts": {
+    "install-server": "cd Backend && npm install",
+    "install-client": "cd Client && npm install --legacy-peer-deps",
+    "install-admin": "cd Admin && npm install --force",
+    "install": "npm run install-server && npm run install-client && npm run install-admin",
+    "server": "cd Backend && npm start",
+    "client": "cd Client & npm run dev",
+    "admin": "cd Admin & npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanzala-bhutto/React-Express-MultiDiseasePrediction.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

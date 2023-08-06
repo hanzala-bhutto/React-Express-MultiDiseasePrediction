@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hypertension Coronary Arteries Model- Heart0046
+* source:	https://sketchfab.com/3d-models/hypertension-coronary-arteries-model-heart0046-72784642f339431fab1c61c2cf88baba
+* author:	VisibleHeartLabs (https://sketchfab.com/VisibleHeartLabs)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hypertension Coronary Arteries Model- Heart0046" (https://sketchfab.com/3d-models/hypertension-coronary-arteries-model-heart0046-72784642f339431fab1c61c2cf88baba) by VisibleHeartLabs (https://sketchfab.com/VisibleHeartLabs) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
