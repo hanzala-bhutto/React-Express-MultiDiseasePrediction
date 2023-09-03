@@ -4,11 +4,11 @@
   "description": "Multi Disease Prediction System",
   "main": "server.js",
   "scripts": {
-    "install-server": "cd Backend && npm install",
+    "install-server": "cd Express_API && npm install",
     "install-client": "cd Client && npm install --legacy-peer-deps",
     "install-admin": "cd Admin && npm install --force",
     "install": "npm run install-server && npm run install-client && npm run install-admin",
-    "server": "cd Backend && npm start",
+    "server": "cd Express_API && npm start",
     "client": "cd Client & npm run dev",
     "admin": "cd Admin & npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
