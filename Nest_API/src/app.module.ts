@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { DiabetesModule } from './diabetes/diabetes.module';
 
 @Module({
   imports: [
@@ -14,7 +15,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       "database": "multidisease_db",
       "entities": ["dist/**/*.entity{.ts,.js}"],
       "synchronize": true
-    })
+    }),
+    DiabetesModule
   ],
   controllers: [AppController],
   providers: [AppService],
