@@ -26,7 +26,7 @@ The **Multi Disease Prediction System** is a predictive modeling project that pr
 - Frontend: React
 - Backend: Express / Nest.js
 - Database Management System (DBMS): MySQL / PostgreSQL
-- Machine Learning Models: Support Vector Machine Classifier and Logistic Regression
+- Machine Learning Models: Support Vector Machine Classifier and Logistic Regression (Python)
 
 ## Main Problem
 
