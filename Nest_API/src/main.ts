@@ -7,6 +7,7 @@ import { Logger } from '@nestjs/common';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  const logger = new Logger();
 
   app.enableCors();
   dotenv.config();
@@ -14,9 +15,11 @@ async function bootstrap() {
 
   // Log each request
   app.use((req, res, next) => {
-    Logger.log(`Request ${req.method} ${req.originalUrl} `);
+    logger.log(`Request: ${req.method} ${req.originalUrl} `);
     res.on('finish', () => {
-      Logger.log(`Response ${res.statusCode}`);
+      logger.log(
+        `Response:  ${req.method} ${req.originalUrl} ${res.statusCode}`,
+      );
     });
     next();
   });
