@@ -4,23 +4,25 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DiabetesModule } from './diabetes/diabetes.module';
 import { HeartModule } from './heart/heart.module';
+import { ConfigModule } from '@nestjs/config';
+import { PostgreSqlDataSource } from './config/OrmConfig';
+import { AuthModule } from './auth/auth.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      "type": "postgres",
-      "host": "localhost",
-      "port": 5433,
-      "username": "postgres",
-      "password": "fast",
-      "database": "multidisease_db",
-      "entities": ["dist/**/*.entity{.ts,.js}"],
-      "synchronize": true
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: `.env`,
     }),
+    TypeOrmModule.forRoot(PostgreSqlDataSource),
     DiabetesModule,
-    HeartModule
+    HeartModule,
+    AuthModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
+  exports: [ConfigModule],
 })
 export class AppModule {}
