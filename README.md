@@ -1,6 +1,6 @@
 # Multi Disease Prediction System
 
-![Project Banner](./images/banner.png)
+![Project Banner](./Project_Images/1.jpg)
 
 ## Table of Contents
 
@@ -21,14 +21,12 @@
 
 The **Multi Disease Prediction System** is a predictive modeling project that predicts diseases based on user-provided symptoms. It analyzes user-provided symptoms and provides the probability of a disease as output. This system aims to improve healthcare by enabling early disease detection and intervention.
 
-![System Screenshot](./images/screenshot.png)
-
 ## Tech Stack
 
 - Frontend: React
 - Backend: Express / Nest.js
 - Database Management System (DBMS): MySQL / PostgreSQL
-- Machine Learning Models: Support Vector Machine Classifier and Logistic Regression
+- Machine Learning Models: Support Vector Machine Classifier and Logistic Regression (Python)
 
 ## Main Problem
 
@@ -60,6 +58,12 @@ This project seeks to make a significant contribution to the field of healthcare
 - Supports both MySQL and PostgreSQL as database management systems.
 - Offers a user-friendly React-based frontend.
 - Enables healthcare professionals to make early interventions.
+
+![Model Selection](./Project_Images/2.jpg)
+
+![Form Submission](./Project_Images/3.jpg)
+
+![Result](./Project_Images/4.jpg)
 
 ## Getting Started
 
