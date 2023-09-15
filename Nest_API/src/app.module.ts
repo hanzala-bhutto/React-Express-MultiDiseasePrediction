@@ -18,6 +18,8 @@ import { UserModule } from './user/user.module';
     TypeOrmModule.forRoot(PostgreSqlDataSource),
     DiabetesModule,
     HeartModule,
+    AuthModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
