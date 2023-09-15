@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DiabetesModule } from './diabetes/diabetes.module';
+import { HeartModule } from './heart/heart.module';
 
 @Module({
   imports: [
@@ -16,7 +17,8 @@ import { DiabetesModule } from './diabetes/diabetes.module';
       "entities": ["dist/**/*.entity{.ts,.js}"],
       "synchronize": true
     }),
-    DiabetesModule
+    DiabetesModule,
+    HeartModule
   ],
   controllers: [AppController],
   providers: [AppService],
