@@ -42,6 +42,5 @@ import json
 if __name__ == "__main__":
     X=json.loads(sys.argv[1])
     # print(X)
-    X=X[:-1]
     y=diabetes_model(X)
     print(y)

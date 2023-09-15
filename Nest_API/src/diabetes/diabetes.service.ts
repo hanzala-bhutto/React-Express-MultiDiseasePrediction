@@ -18,7 +18,7 @@ export class DiabetesService {
         const entry = await this.create(diabetesEntry);
         console.log(entry);
         
-        const predictedValue = await this.aiPredict(entry);
+        const predictedValue = await this.aiPredict(diabetesEntry);
         // console.log(predictedValue);
 
         entry.outcome = predictedValue as unknown as number; 
@@ -37,12 +37,11 @@ export class DiabetesService {
         return entry;
     }
 
-    async aiPredict(entry: Diabetes): Promise<number> {
+    async aiPredict(entry: DiabetesEntry): Promise<number> {
      
         // get only values from entry
         const entryValues: number[] = Object.values(entry);
         // console.log(entryValues);
-        entryValues.push(0);
 
         return new Promise((resolve, reject) => {
             const pythProcess = spawn('python', ['-m','src.diabetes.pythonModel.Diabetes', JSON.stringify(entryValues)]);
